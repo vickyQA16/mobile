@@ -19,6 +19,7 @@ public class demo1 {
 		int addYear = sc.nextInt();
 		String add_N_Of_Year = add_N_Of_year(date,month,year,addYear);
 		System.out.println(add_N_Of_Year);
+		System.out.println("How are you..?");
 	}
 	static String add_N_Of_year(int date,int month,int year,int addYear) throws ParseException{
 		String s = year+"-"+month+"-"+date;
@@ -27,6 +28,7 @@ public class demo1 {
 		c.setTime(d.parse(s));
 		c.add(Calendar.YEAR, addYear);
 		return d.format(c.getTime());
+		System.out.println("What is your name");
 	}
 
 	}
